@@ -29,3 +29,78 @@ header .container {
     position: relative;
     z-index: 1; /* keeps text above the overlay */
 }
+
+/* Interests alternating layout */
+.interest-row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.interest-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interest-img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* Experience cards */
+.experience-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px 30px;
+    margin-bottom: 24px;
+}
+
+.experience-card h4 {
+    margin-top: 0;
+}
+
+.experience-meta {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+/* Larger timeline circles in Interests section */
+.timeline>li .timeline-image {
+    width: 120px;
+    height: 120px;
+}
+@media(min-width:768px) {
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+}
+@media(min-width:992px) {
+    .timeline>li .timeline-image {
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+    }
+}
+@media(min-width:1200px) {
+    .timeline>li .timeline-image {
+        width: 220px;
+        height: 220px;
+        margin-left: -110px;
+    }
+}

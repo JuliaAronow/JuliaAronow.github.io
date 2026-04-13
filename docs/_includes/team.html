@@ -1,37 +1,54 @@
-<!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
+<!-- Experience Section -->
+<section id="experience" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Academic/personal projects &amp; Work Experience</h2>
+                <h3 class="section-subheading text-muted">Here are some examples of my past or current projects.</h3>
             </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
+        </div>
 
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <!-- Card 1 -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="experience-card">
+                    <h4>Pseudo x86 assembler</h4>
+                    <p class="experience-meta">Class project</p>
+                    <p>In my computer architecture class, I was tasked with creating a pseudo x86 ASM compiler over the
+                    course of the semester. Several assignments involved writing assembly code for this compiler as we added more and more
+                    functionality to it. Having to manage the stack manually so that I did not overwrite my code or overflow the stack
+                    really solidified for me how memory works. (No links or images exist of this project).</p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Card 2 -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="experience-card">
+                    <h4>Snake game in command console</h4>
+                    <p class="experience-meta">Class project</p>
+                    <p>For my C++ final, we were tasked with creating a game of our choice. I chose to make
+                    Snake, a timeless classic. I had to figure out how to take live input from the user within the command console and
+                    update the “screen” as the snake moved. I hope to give this project a rehaul and polish in the future.</p>
+                    <small><a href="https://github.com/JuliaAronow/Snake">Here's a link to the repository</a></small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="experience-card">
+                    <h4>Pet Memorial Site (In-progress project)</h4>
+                    <p class="experience-meta">Personal project</p>
+                    <p>I want to develop my front end skills more, so I plan on creating a memorial
+                    site for my late cat Toby. It is a great opportunity to practice and grow my skills, while also functioning as a way to
+                    collect all my pictures of him in one place. I do not have any pictures yet, but once I have a baseline version of the
+                    site I will.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
