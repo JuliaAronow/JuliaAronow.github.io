@@ -30,6 +30,12 @@
     color:rgb(56, 56, 56)
 }
 
+/* Set the highlight color for items in the navbar */
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: #59345a;
+}
 
 
 /* -------- Soft gradient background for section blocks -------- */
