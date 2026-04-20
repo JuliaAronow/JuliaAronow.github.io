@@ -1,10 +1,10 @@
 <!-- Experience Section -->
-<section id="experience" class="bg-light-gray">
+<section id="experience">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Academic/personal projects &amp; Work Experience</h2>
-                <h3 class="section-subheading text-muted">Here are some examples of my past or current projects.</h3>
+                <h3 class="section-subheading">Here are some examples of my past or current projects.</h3>
             </div>
         </div>
 
@@ -12,26 +12,50 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <div class="experience-card">
-                    <h4>Pseudo x86 assembler</h4>
-                    <p class="experience-meta">Class project</p>
-                    <p>In my computer architecture class, I was tasked with creating a pseudo x86 ASM compiler over the
-                    course of the semester. Several assignments involved writing assembly code for this compiler as we added more and more
-                    functionality to it. Having to manage the stack manually so that I did not overwrite my code or overflow the stack
-                    really solidified for me how memory works. (No links or images exist of this project).</p>
+                    <img class="experience-card-image" src="{{ site.baseurl }}/img/team/cognizant_logo.png"
+                        alt="Cognizant logo">
+                    <div class="experience-card-content">
+                        <h4>AI-driven Document Assistant</h4>
+                        <p class="experience-meta">Professional project</p>
+                        <p>I worked on a 9-person intern team during my internship with Cognizant where we developed an Azure
+                            DevOps-powered AI assistant
+                            and document reader, automating the extraction of medical claim data into Excel templates for
+                            analyst use.
+                            We integrated Microsoft Azure's API to enable document-based Q&A via chatbot. I served as both as a
+                            developer and product owner
+                            for the team, setting up the repository and Docker environment, liaising with stakeholders, and
+                            ensuring balanced task distribution across the team.
+                            <br>
+                            Technologies: Azure, Docker, React, JavaScript, XML, GitHub
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
+        
         <!-- Card 2 -->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <div class="experience-card">
-                    <h4>Snake game in command console</h4>
-                    <p class="experience-meta">Class project</p>
-                    <p>For my C++ final, we were tasked with creating a game of our choice. I chose to make
-                    Snake, a timeless classic. I had to figure out how to take live input from the user within the command console and
-                    update the “screen” as the snake moved. I hope to give this project a rehaul and polish in the future.</p>
-                    <small><a href="https://github.com/JuliaAronow/Snake">Here's a link to the repository</a></small>
+                    <img class="experience-card-image" src="{{ site.baseurl }}/img/team/paging_diagram.png"
+                        alt="Paging diagram">
+                    <div class="experience-card-content">
+                        <h4>Dynamic Paging Algorithm</h4>
+                        <p class="experience-meta">Academic project</p>
+                        <p>
+                            I wrote a dynamic memory paging algorithm for one of my final projects in my operating systems
+                            class. I created several
+                            interconnected algorithms designed to efficiently page programs (and parts of programs) in and out
+                            of memory while
+                            keeping the number of “misses” (page outs) to a minimum. I had to consider the different demands of
+                            each kind of
+                            possible program in mind and design around what would ensure the most efficient use of memory
+                            possible. This project
+                            pushed my critical thinking skills to the limit, and taught me a lot about how memory works behind
+                            the scenes, growing
+                            my Linux and C skills.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,12 +64,49 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <div class="experience-card">
-                    <h4>Pet Memorial Site (In-progress project)</h4>
-                    <p class="experience-meta">Personal project</p>
-                    <p>I want to develop my front end skills more, so I plan on creating a memorial
-                    site for my late cat Toby. It is a great opportunity to practice and grow my skills, while also functioning as a way to
-                    collect all my pictures of him in one place. I do not have any pictures yet, but once I have a baseline version of the
-                    site I will.</p>
+                    <img class="experience-card-image" src="{{ site.baseurl }}/img/team/x86.png" alt="Pseudo x86 code">
+                    <div class="experience-card-content">
+                        <h4>Pseudo x86 assembler</h4>
+                        <p class="experience-meta">Academic project</p>
+                        <p>In my computer architecture class, I was tasked with creating a pseudo x86 ASM compiler over the
+                        course of the semester. Several assignments involved writing assembly code for this compiler as we added more and more
+                        functionality to it. Having to manage the stack manually so that I did not overwrite my code or overflow the stack
+                        really solidified for me how memory works. The image shows a snippet of what the pseudo x86 looks like.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="experience-card">
+                    <img class="experience-card-image" src="{{ site.baseurl }}/img/team/snake.png" alt="Snake game in command console">
+                    <div class="experience-card-content">
+                        <h4>Snake game in command console</h4>
+                        <p class="experience-meta">Academic project</p>
+                        <p>For my C++ final, we were tasked with creating a game of our choice. I chose to make
+                        Snake, a timeless classic. I had to figure out how to take live input from the user within the command console and
+                        update the “screen” as the snake moved. I hope to give this project a rehaul and polish in the future.</p>
+                        <small><a href="https://github.com/JuliaAronow/Snake">Here's a link to the repository</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="experience-card">
+                    <img class="experience-card-image" src="{{ site.baseurl }}/img/team/toby_small.jpg" alt="Toby the cat">
+                    <div class="experience-card-content">
+                        <h4>Pet Memorial Site (In-progress project)</h4>
+                        <p class="experience-meta">Personal project</p>
+                        <p>I want to develop my front end skills more, so I plan on creating a memorial
+                        site for my late cat Toby. It is a great opportunity to practice and grow my skills, while also functioning as a way to
+                        collect all my pictures of him in one place. I do not have any pictures yet, but once I have a baseline version of the
+                        site I will.</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,53 @@
 /* Custom overrides */
 
+/* Local font: Glacial Indifference (SIL OFL) */
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Use Glacial Indifference for the navbar brand.
+   Selector matches the theme's own (.navbar-default .navbar-brand)
+   so specificity is high enough to win. */
+.navbar-default .navbar-brand,
+.navbar-default.navbar-shrink .navbar-brand,
+.section-heading {
+    font-family: 'Glacial Indifference', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.section-subheading {
+    color:rgb(56, 56, 56)
+}
+
+
+
+/* -------- Soft gradient background for section blocks -------- */
+#about-me,
+#experience {
+    position: relative;
+    background:
+        radial-gradient(55% 55% at 20% 30%,
+            rgba(255, 190, 220, 0.55), transparent 70%),
+        radial-gradient(55% 55% at 80% 70%,
+            rgba(170, 210, 255, 0.55), transparent 70%),
+        radial-gradient(75% 75% at 50% 50%,
+            rgba(220, 245, 230, 0.35), transparent 80%),
+        linear-gradient(135deg, #fff7fb 0%, #f2f8ff 100%);
+}
+/* -------------------------------------------------------------- */
+
+
 /* Reduce navbar height when scrolled */
 @media(min-width:768px) {
     .navbar-default.navbar-shrink {
@@ -66,14 +114,46 @@ footer a {
     border-radius: 8px;
     padding: 24px 30px;
     margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.experience-card .experience-card-image {
+    flex: 0 0 250px;   /* don't grow, don't shrink, stay 250px wide */
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: #f2f2f2;
+    display: block;
+}
+
+.experience-card .experience-card-content {
+    flex: 1 1 auto;    /* take the rest of the row */
+    min-width: 0;      /* allow long words/links to wrap instead of overflowing */
 }
 
 .experience-card h4 {
     margin-top: 0;
 }
 
+/* Stack image above text on small screens */
+@media (max-width: 600px) {
+    .experience-card {
+        flex-direction: column;
+    }
+    .experience-card .experience-card-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+}
+
 .experience-meta {
-    color: #aaa;
+    color: #5e5e5e;
     font-size: 13px;
     margin-bottom: 12px;
 }
